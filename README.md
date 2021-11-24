@@ -5,6 +5,11 @@ TIMEBOX: 2-3 hours.
 Languages: HTML, CSS, Javascript
 Frameworks: N/A
 ```
+### Run Project
+
+1. cd/bolilerplate
+2. python3 -m http.server
+3. Click to certificate.html or transcript.html for view  certificate or transcript.
 
 ### Overview
 
