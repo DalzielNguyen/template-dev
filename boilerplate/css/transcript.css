@@ -1,0 +1,148 @@
+:root {
+    --signature-width: 300px;
+}
+
+body {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header {
+    text-align: right;
+    margin-bottom: -50px;
+}
+#institution-logo {
+    height: 200px;
+}
+
+#metadata span:first-child {
+    display: inline-block;
+    position: relative;
+    width: 250px;
+}
+#metadata span:first-child::after {
+    content: ":";
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#metadata span:last-child {
+    padding-left: 10px;
+    font-weight: 600;
+}
+
+#diploma-description {
+    font-weight: 700;
+}
+
+#grade-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+#grade-table th {
+    text-align: left;
+}
+/* Header row */
+#grade-table tr:first-child {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+#grade-table th,
+#grade-table td {
+    padding: 6px 0;
+}
+
+#end-of-record {
+    text-align: center;
+}
+#end-of-record span {
+    --gap-size: 30px;
+
+    text-transform: uppercase;
+    position: relative;
+}
+#end-of-record span::before,
+#end-of-record span::after {
+    content: "";
+    position: absolute;
+    width: 150%;
+    bottom: 6px;
+
+    background-color: black;
+    height: 3px;
+}
+#end-of-record span::before {
+    right: calc(100% + var(--gap-size));
+}
+#end-of-record span::after {
+    left: calc(100% + var(--gap-size));
+}
+
+#signature,
+#date-of-issue {
+    width: var(--signature-width);
+}
+
+#signature img {
+    width: 100%;
+}
+
+#signature span {
+    display: block;
+}
+
+#signature hr,
+#date-of-issue hr {
+    height: 3px;
+    border: none;
+    background-color: black;
+}
+
+#date-of-issue {
+    margin-top: 40px;
+}
+
+#grade-scheme-table {
+    display: flex;
+}
+#grade-scheme-table > div {
+    flex-basis: 100%;
+}
+#grade-scheme-table > div + div {
+    margin-left: 20px;
+}
+
+#grade-scheme-table__header {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    font-weight: 700;
+    margin-top: 20px;
+    padding: 6px 0;
+}
+
+.scheme {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+}
+.scheme__name {
+    display: inline-block;
+    min-width: 100px;
+}
+
+#pagination {
+    text-align: center;
+}
+
+footer {
+    margin-top: 20px;
+}
+
+#footer-img {
+    width: 100%;
+}

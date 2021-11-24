@@ -5,10 +5,19 @@ TIMEBOX: 2-3 hours.
 Languages: HTML, CSS, Javascript
 Frameworks: N/A
 ```
-### Run Project
+### Notes
+1. I define two CSS files for certificate.html or transcripts.html to be more transparent about the code that is easy to read and debug.
+2. I can't find where is "Date Attained" value is in the .json file, It just has "issuedOn" value, and I don't sure it is the same value,  so I set it static in certificate.html.
 
-1. cd/bolilerplate
-2. python3 -m http.server
+### Run Project
+1. Go to bolilerplatefolder
+    ```sh
+    cd/bolilerplate
+    ```
+2. Run Json Server
+    ```sh
+    python3 -m http.server
+    ```
 3. Click to certificate.html or transcript.html for view  certificate or transcript.
 
 ### Overview
